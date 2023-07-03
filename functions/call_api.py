@@ -1,13 +1,6 @@
 import requests
 import getters
-"""
-THIS IS ALL API ENDPOINTS
 
-Get all bands
-/get/allBands
-
-
-"""
 def post_specific_band_by_id(specific_id=None):
     band = getters.get_specific_band_by_id(specific_id=specific_id)
     headers = {'Content-Type': 'application/json'}
